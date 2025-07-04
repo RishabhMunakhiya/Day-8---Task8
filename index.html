@@ -16,10 +16,15 @@
 
     <style>
         body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0f2027, #2c5364 60%, #8a2fab 100%);
             padding-top: 90px;
         }
+
         .custom-navbar {
             background: linear-gradient(135deg, #493148, #08061500);
             padding: 15px 30px;
@@ -32,26 +37,32 @@
             /* For Safari */
             border-bottom: 1px solid rgba(255, 255, 255, 0.09);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.807);
+
         }
+
         .navbar-brand {
             font-weight: bold;
             font-size: 1.8rem;
             color: #ffffff;
         }
+
         .nav-link {
             color: #f0f0f0 !important;
             margin: 10px 30px;
             border-radius: 10px;
             transition: all 0.3s ease;
         }
+
         .nav-link:hover {
             color: #5a9fc1 !important;
             background: white;
             border-radius: 10px;
         }
+
         .search-input {
             max-width: 300px;
         }
+
         .card {
             background: rgba(255, 255, 255, 0.1);
             border: none;
@@ -63,17 +74,20 @@
             border: 1px solid rgba(255, 255, 255, 0.341);
             color: rgb(229, 227, 227);
         }
+
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 
         }
+
         .card-img-top {
             height: 200px;
             object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.325);
         }
+
         .btn-read-more {
             background: linear-gradient(45deg, #6a11cb, #2575fc);
             border: none;
@@ -81,10 +95,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.s ease;
         }
+
         .btn-read-more:hover {
             background: linear-gradient(45deg, #2575fc, #6a11cb);
             transform: scale(1.05);
         }
+
         footer {
             background: linear-gradient(135deg, #313036, #2c2a35);
             color: #ffffff;
@@ -94,6 +110,7 @@
             z-index: 100;
             position: relative;
         }
+
         footer a {
             color: #ffffff;
             margin: 0 10px;
@@ -101,18 +118,22 @@
 
 
         }
+
         footer a:hover {
             color: #427f44;
         }
+
         .footer-links a {
             display: flex;
             margin: 5px 0;
             text-decoration: none;
         }
+
         .my-5 {
             margin-top: 3rem !important;
             margin-bottom: 3rem !important;
         }
+
         @media (max-width: 991.98px) {
             .navbar .container {
                 align-items: flex-start;
@@ -121,11 +142,12 @@
             footer {
                 position: relative;
             }
+
             .footer-links a {
                 text-align: center;
                 display: block;
             }
-            
+
 
             .footer-links {
                 text-align: center;
@@ -238,7 +260,7 @@
         <div class="row g-4" id="blogContainer">
 
             <!-- Card 1 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/ai/600/300" class="card-img-top" alt="AI Blog">
                     <div class="card-body">
@@ -251,7 +273,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/space/600/300" class="card-img-top" alt="Space Blog">
                     <div class="card-body">
@@ -264,7 +286,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/vr/600/300" class="card-img-top" alt="VR Blog">
                     <div class="card-body">
@@ -277,7 +299,7 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/robotics/600/300" class="card-img-top" alt="Robotics Blog">
                     <div class="card-body">
@@ -289,7 +311,7 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/blockchain/600/300" class="card-img-top" alt="Blockchain Blog">
                     <div class="card-body">
@@ -302,7 +324,7 @@
             </div>
 
             <!-- Card 6 -->
-            <div class="col-md-4 blog-card">
+            <div class="col-md-4 blog-card mb-4">
                 <div class="card h-100 p-3">
                     <img src="https://picsum.photos/seed/green/600/300" class="card-img-top" alt="Green Tech Blog">
                     <div class="card-body">
@@ -349,7 +371,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 </html>
